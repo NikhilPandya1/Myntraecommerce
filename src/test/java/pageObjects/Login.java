@@ -14,6 +14,7 @@ public class Login extends BasePage{
 
 	public Login(WebDriver driver) {
 		super(driver);
+		
 	}
 		// TODO Auto-generated constructor stub
 		
@@ -23,6 +24,23 @@ public class Login extends BasePage{
 	    
 	    @FindBy(xpath = "//input[@autocomplete='new-password']")
 	    WebElement txtPhoneField;
+	    
+	    @FindBy(xpath = "//input[@type='tel' and @class='form-control mobileNumberInput']")
+	    WebElement mobileNumberInput;
+	    
+	    @FindBy(xpath = "//input[@type='checkbox' and @class='consentCheckbox']")
+	    WebElement consentCheckbox;
+	    
+	    @FindBy(xpath = "//div[@class='submitBottomOption']")
+    	WebElement btnContinue;
+    	
+    	@FindBy(xpath = "//input[@name='otp0']")
+    	WebElement otpField;
+
+    	
+
+
+	    
 	    
 	    
 
@@ -42,6 +60,9 @@ public class Login extends BasePage{
 	            ExpectedConditions.presenceOfElementLocated(
 	                By.xpath("//a[@data-track='login']")));
 	        loginBtn.click();	    }
+	    
+
+    	
 	                
 	       
 
@@ -59,5 +80,40 @@ public class Login extends BasePage{
 
 	        return txtPhoneField.isDisplayed();
 	    }
+	    
+	    
+	    	public void enterMobileNumber(String mobileNumber) {
+	    	    wait.until(ExpectedConditions.visibilityOf(mobileNumberInput));
+	    	    mobileNumberInput.clear();
+	    	    mobileNumberInput.sendKeys(mobileNumber);
 
+	    }
+	    	
+	    	public void clickConsentCheckbox() {
+	    	    wait.until(ExpectedConditions.elementToBeClickable(consentCheckbox));
+	    	    consentCheckbox.click();
+	    	}
+
+
+
+	    	public void clickContinue() {
+	    	    wait.until(ExpectedConditions.visibilityOf(btnContinue));
+	    	    wait.until(ExpectedConditions.elementToBeClickable(btnContinue));
+	    	    btnContinue.click();
+	    	}
+	    	
+	    	public boolean isOtpFieldDisplayed() {
+	    	    wait.until(ExpectedConditions.visibilityOf(otpField));
+	    	    return otpField.isDisplayed();
+	    	}
+	    	
+	    	public void clickfieldphonenumber() {
+	    	    wait.until(ExpectedConditions.visibilityOf(mobileNumberInput));
+	    	    mobileNumberInput.click();
+
+	    	}
 }
+
+
+
+
