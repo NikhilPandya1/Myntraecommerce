@@ -1,0 +1,55 @@
+16:17:00.827 [main] WARN  healenium - Failed to find an element using locator By.xpath: //h4[@class='text-banner-title']
+16:17:00.837 [main] WARN  healenium - Reason: no such element: Unable to locate element: {"method":"xpath","selector":"//h4[@class='text-banner-title']"}
+  (Session info: MicrosoftEdge=148.0.3967.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [5c057d13c563da65a3189905f09b8166, findElement {using=xpath, value=//h4[@class='text-banner-title']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.70, fedcm:accounts: true, goog:processID: 10964, ms:edgeOptions: {debuggerAddress: localhost:57635}, msedge: {msedgedriverVersion: 148.0.3967.70 (8956564be045..., userDataDir: C:\Users\heren\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.101.9:4444/ses..., se:cdpVersion: 148.0.3967.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c057d13c563da65a3189905f09b8166
+16:17:00.861 [main] WARN  healenium - Trying to heal...
+16:17:00.861 [main] WARN  healenium - Error during findElement: 
+java.lang.NullPointerException: Cannot invoke "java.util.function.BiFunction.apply(Object, Object)" because the return value of "com.epam.healenium.model.SessionContext.getFunctionUrl()" is null
+	at com.epam.healenium.processor.GetReferenceElementsProcessor.populateUrlKey(GetReferenceElementsProcessor.java:70) ~[healenium-web-3.4.0.jar:?]
+	at com.epam.healenium.processor.GetReferenceElementsProcessor.execute(GetReferenceElementsProcessor.java:52) ~[healenium-web-3.4.0.jar:?]
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:42) ~[healenium-web-3.4.0.jar:?]
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:50) ~[healenium-web-3.4.0.jar:?]
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:60) ~[healenium-web-3.4.0.jar:?]
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39) ~[healenium-web-3.4.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.findElement(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.41.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy32.toString(Unknown Source) ~[?:?]
+	at java.base/java.lang.String.valueOf(String.java:4465) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:356) ~[selenium-support-4.41.0.jar:?]
+	at java.base/java.lang.String.valueOf(String.java:4465) ~[?:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230) ~[selenium-support-4.41.0.jar:?]
+	at pageObjects.HomePage.getBannerText(HomePage.java:62) ~[test-classes/:?]
+	at testCases.Checkoverview.verifyClothes(Checkoverview.java:40) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.9.0.jar:7.9.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:819) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestRunner.run(TestRunner.java:619) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1134) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.run(TestNG.java:1101) [testng-7.9.0.jar:7.9.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]

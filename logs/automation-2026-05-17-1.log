@@ -1,0 +1,72 @@
+16:11:15.010 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+16:11:15.364 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+16:13:57.240 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+16:13:57.583 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+16:14:00.553 [main] DEBUG healenium - [Init] sessionKey: 2884046c115cda6c8d0c5b78c404f044, serverUrl: http://localhost:7878/healenium, imitateUrl: http://localhost:8000/imitate
+16:14:00.594 [main] DEBUG healenium - [Get Elements] Request: Request{method=GET, url=http://localhost:7878/healenium/elements}
+16:14:00.626 [main] WARN  healenium - [Get Elements] Error during call. Message: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878, Exception: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+16:14:00.627 [main] DEBUG healenium - [Init Report] Request: Request{method=POST, url=http://localhost:7878/healenium/report/init/2884046c115cda6c8d0c5b78c404f044}
+16:14:00.652 [OkHttp http://localhost:7878/...] WARN  healenium - [Queue] Error during request: Request{method=POST, url=http://localhost:7878/healenium/report/init/2884046c115cda6c8d0c5b78c404f044}. Message: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878. Exception: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+16:14:04.265 [main] INFO  testCases.Checkoverview - Starting Testcase for overview
+16:14:04.557 [main] DEBUG healenium - [Save Elements] Request: Request{method=POST, url=http://localhost:7878/healenium}. Request body: RequestDto(locator=//a[contains(@class,'desktop-main') and normalize-space()='Men'], type=By.xpath, className=pageObjects.HomePage, methodName=clickmensection, command=findElement, results=null, usedResult=null, url=https://www.myntra.com/, elementIds=[f.7924D784125CA17A0831A5FF637C2A38.d.F86A9E9768B29CC18544A99C4B0A6BE8.e.42], enableHealing=false, sessionId=2884046c115cda6c8d0c5b78c404f044)
+16:14:04.561 [OkHttp http://localhost:7878/...] WARN  healenium - [Queue] Error during request: Request{method=POST, url=http://localhost:7878/healenium}. Message: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878. Exception: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:7878
+16:14:05.995 [main] INFO  testCases.Checkoverview - Clicked on Men section
+16:14:16.044 [main] WARN  healenium - Failed to find an element using locator By.xpath: //h4[@class='text-banner-title']
+16:14:16.046 [main] WARN  healenium - Reason: no such element: Unable to locate element: {"method":"xpath","selector":"//h4[@class='text-banner-title']"}
+  (Session info: MicrosoftEdge=148.0.3967.70)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [2884046c115cda6c8d0c5b78c404f044, findElement {value=//h4[@class='text-banner-title'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.70, fedcm:accounts: true, goog:processID: 13600, ms:edgeOptions: {debuggerAddress: localhost:52266}, msedge: {msedgedriverVersion: 148.0.3967.70 (8956564be045..., userDataDir: C:\Users\heren\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: Windows 11, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://192.168.101.9:4444/ses..., se:cdpVersion: 148.0.3967.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2884046c115cda6c8d0c5b78c404f044
+16:14:16.047 [main] WARN  healenium - Trying to heal...
+16:14:16.047 [main] WARN  healenium - Error during findElement: 
+java.lang.NullPointerException: Cannot invoke "java.util.function.BiFunction.apply(Object, Object)" because the return value of "com.epam.healenium.model.SessionContext.getFunctionUrl()" is null
+	at com.epam.healenium.processor.GetReferenceElementsProcessor.populateUrlKey(GetReferenceElementsProcessor.java:70) ~[healenium-web-3.4.0.jar:?]
+	at com.epam.healenium.processor.GetReferenceElementsProcessor.execute(GetReferenceElementsProcessor.java:52) ~[healenium-web-3.4.0.jar:?]
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:42) ~[healenium-web-3.4.0.jar:?]
+	at com.epam.healenium.processor.BaseProcessor.process(BaseProcessor.java:50) ~[healenium-web-3.4.0.jar:?]
+	at com.epam.healenium.handlers.proxy.BaseHandler.findElement(BaseHandler.java:60) ~[healenium-web-3.4.0.jar:?]
+	at com.epam.healenium.handlers.proxy.SelfHealingProxyInvocationHandler.invoke(SelfHealingProxyInvocationHandler.java:39) ~[healenium-web-3.4.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy29.findElement(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.41.0.jar:?]
+	at jdk.proxy2/jdk.proxy2.$Proxy32.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209) ~[selenium-support-4.41.0.jar:?]
+	at pageObjects.HomePage.getBannerText(HomePage.java:62) ~[test-classes/:?]
+	at testCases.Checkoverview.verifyClothes(Checkoverview.java:40) ~[test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148) ~[testng-7.9.0.jar:7.9.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.9.0.jar:7.9.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:819) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestRunner.run(TestRunner.java:619) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.9.0.jar:7.9.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1134) [testng-7.9.0.jar:7.9.0]
+	at org.testng.TestNG.run(TestNG.java:1101) [testng-7.9.0.jar:7.9.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]

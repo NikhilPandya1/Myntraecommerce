@@ -1,0 +1,70 @@
+16:56:42.002 [main] INFO  testCases.Checkoverview - Clicked on Men section
+16:57:23.792 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@1a5f7e7c: 74 ms
+16:57:23.810 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@153f66e7: 18 ms
+16:57:23.827 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@c27d163: 17 ms
+16:57:23.842 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@248deced: 14 ms
+16:57:23.858 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@4f186450: 15 ms
+16:57:23.882 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@7fab4be7: 0 ms
+21:32:27.792 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+21:32:28.307 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+21:33:33.910 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+21:33:34.370 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+21:35:22.044 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+21:35:22.485 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+21:36:23.709 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+21:36:24.136 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+21:41:11.705 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+21:41:12.199 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+21:46:21.027 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+21:46:21.498 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+23:43:02.650 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+23:43:03.160 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+23:44:16.185 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+23:44:16.617 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+20:22:00.359 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+20:22:00.756 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+20:23:02.840 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+20:23:03.152 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+20:26:24.395 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+20:26:24.726 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+20:27:17.822 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+20:27:18.141 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+20:27:22.873 [main] INFO  testCases.Checkoverview - Starting Testcase for overview
+20:27:24.324 [main] INFO  testCases.Checkoverview - Clicked on Men section
+20:27:24.439 [main] INFO  testCases.Checkoverview - Men section was got executed via assert
+20:27:55.322 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+20:27:55.652 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+20:27:59.767 [main] INFO  testCases.Checkoverview - Starting Testcase for overview
+20:28:02.004 [main] INFO  testCases.Checkoverview - Clicked on Men section
+20:28:02.139 [main] INFO  testCases.Checkoverview - Men section was got executed via assert
+20:54:21.782 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml"
+20:54:22.098 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\heren\eclipse-workspace\Myntraecommerce\master.xml
+
+20:54:25.479 [main] INFO  testCases.Checkoverview - Starting Testcase for overview
